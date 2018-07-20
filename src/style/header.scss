@@ -1,0 +1,71 @@
+.header-grid {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  position: absolute;
+  background-image: url("/static/assets/wood.jpg") center repeat;
+}
+
+.logo-container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  left: 120px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.link-grid a {
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  padding-top: 33px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.checkout {
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  padding-top: 33px;
+  font-size: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+#home:hover {
+  color: green;
+}
+
+#contact:hover {
+  color: yellow;
+}
+
+#shop:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
