@@ -3,8 +3,9 @@
   height: 100px;
   display: grid;
   grid-template-columns: 25% auto 25%;
-  position: absolute;
-  background-image: url("/static/assets/wood.jpg") center repeat;
+  position: fixed;
+  background-color: white;
+  box-shadow: 1px 1px 5px grey;
 }
 
 .logo-container {
