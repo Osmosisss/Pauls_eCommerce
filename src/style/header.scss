@@ -1,19 +1,17 @@
 .header-grid {
   width: 100%;
-  height: 100px;
+  height: 180px;
   display: grid;
-  grid-template-columns: 25% auto 25%;
-  position: fixed;
-  background-color: white;
-  box-shadow: 1px 1px 5px grey;
+  grid-template-columns: 33.333% auto 33.333%;
+  position: absolute;
+  background-color: transparent;
 }
 
 .logo-container {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-  left: 120px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
 }
 
 .logo-container img {
@@ -21,52 +19,110 @@
   width: 100%;
 }
 
-.link-grid {
+.link-grid-left {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.link-grid a {
+.link-grid-left a {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex: wrap;
   justify-content: space-around;
-  padding-top: 33px;
+  padding-top: 80px;
   font-size: 20px;
+  color: white;
   text-decoration: none;
+  border-bottom: 1px transparent;
 }
 
-.checkout {
+.link-grid-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.link-grid-right a {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex: wrap;
   justify-content: space-around;
-  padding-top: 33px;
+  padding-top: 80px;
   font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px transparent;
 }
 
 /* unvisited link */
+
 a:link {
-  color: #ff0000;
+  color: white;
+}
+
+#home a:link {
+  color: white;
+}
+
+#contact a:link {
+  color: white;
+}
+
+#shop a:link {
+  color: white;
 }
 
 /* visited link */
+
 a:visited {
-  color: black;
+  color: white;
+}
+
+#home:visited {
+  color: white;
+}
+
+#contact:visited {
+  color: white;
+}
+
+#shop:visited {
+  color: white;
 }
 
 /* mouse over link */
+
+a:hover {
+  color: gray;
+}
+
 #home:hover {
-  color: green;
+  color: #158835;
 }
 
 #contact:hover {
-  color: yellow;
+  color: #fce452;
 }
 
 #shop:hover {
-  color: red;
+  color: #d81824;
 }
 
 /* selected link */
+
 a:active {
+  color: white;
+}
+
+#home:active {
+  color: gray;
+}
+
+#contact:active {
+  color: gray;
+}
+
+#shop:active {
   color: gray;
 }

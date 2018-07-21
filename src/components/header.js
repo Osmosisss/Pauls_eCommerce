@@ -4,24 +4,34 @@ class Header extends Component {
   render() {
     return (
       <div className="header-grid">
+        <div className="link-grid-left">
+          <div>
+            <a id="home" href="#">
+              Home
+            </a>
+          </div>
+          <div>
+            <a id="contact" href="#">
+              Contact
+            </a>
+          </div>
+        </div>
         <div className="logo-container">
-          <img src="assets/paul_logo.png" alt="logo" />
-        </div>
-        <div className="link-grid">
-          <a id="home" href="#">
-            Home
-          </a>
-          <a id="contact" href="#">
-            Contact
-          </a>
-          <a id="shop" href="#">
-            Shop
-          </a>
-        </div>
-        <div className="checkout">
           <a href="#">
-            <i class="fas fa-shopping-cart" />
+            <img src="assets/paul_logo.png" alt="logo" />
           </a>
+        </div>
+        <div className="link-grid-right">
+          <div>
+            <a id="shop" href="#">
+              Shop
+            </a>
+          </div>
+          <div>
+            <a id="checkout" href="#">
+              <i class="fas fa-shopping-cart" />
+            </a>
+          </div>
         </div>
       </div>
     );
