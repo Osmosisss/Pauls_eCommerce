@@ -1,5 +1,5 @@
 .header-grid {
-  width: 100%;
+  width: 100vw;
   height: 180px;
   display: grid;
   grid-template-columns: 33.333% auto 33.333%;
@@ -9,6 +9,7 @@
 
 .logo-container {
   display: flex;
+  flex: wrap;
   margin-left: auto;
   margin-right: auto;
   width: 180px;

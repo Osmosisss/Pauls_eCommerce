@@ -5,4 +5,12 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Titillium Web", sans-serif;
+  background-image: url("/static/assets/mandala.jpg");
+  background-size: 100%;
+  position: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+  top: 0;
+  z-index: -10;
 }
